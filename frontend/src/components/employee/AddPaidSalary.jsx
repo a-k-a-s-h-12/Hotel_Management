@@ -17,7 +17,7 @@ export default function AddPaidSalary() {
   useEffect(() => {
     async function getEmployeeDetails() {
       try {
-        const response = await axios.get("http://localhost:5000/employees/");
+        const response = await axios.get("https://hotel-management-backend-qaoi.onrender.com/employees/");
         setEmployeeData(response.data.data);
       } catch (error) {
         console.error("Error fetching employee details:", error);
