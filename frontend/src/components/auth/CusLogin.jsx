@@ -26,7 +26,7 @@ export default function CusLogin() {
     try {
       const loginDetails = { cusemail, password };
       const data = (
-        await axios.post("http://localhost:5000/customer/login", loginDetails)
+        await axios.post("https://hotel-management-backend-qaoi.onrender.com/customer/login", loginDetails)
       ).data;
 
       // console.log(data);
