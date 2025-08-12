@@ -28,7 +28,7 @@ const RoomBooking = () => {
     async function getRoomInfo() {
       try {
         const roomResponse = await axios.get(
-          `http://localhost:5000/room/getroom/${roomid}`
+          `https://hotel-management-backend-qaoi.onrender.com/room/getroom/${roomid}`
         );
         setRoomType(roomResponse.data.room.roomtype);
         setRoomPrice(roomResponse.data.room.rentperday);
