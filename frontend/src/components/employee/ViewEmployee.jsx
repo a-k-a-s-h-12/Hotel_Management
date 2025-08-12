@@ -16,7 +16,7 @@ export default function ViewAllEmp() {
   useEffect(() => {
     async function getDetails() {
       try {
-        const result = await axios.get("http://localhost:5000/employees/");
+        const result = await axios.get("https://hotel-management-backend-qaoi.onrender.com/employees/");
         setAllEmp(result.data.data);
         setFiltered(result.data.data);
 
