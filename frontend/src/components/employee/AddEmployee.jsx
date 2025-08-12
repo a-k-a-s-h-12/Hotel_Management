@@ -48,7 +48,7 @@ export default function AddEmployee() {
         // console.log(newDetails);
 
         const data = (
-          await axios.post("http://localhost:5000/employees/", newDetails)
+          await axios.post("https://hotel-management-backend-qaoi.onrender.com/employees/", newDetails)
         ).status;
         if (data === 200) {
           SoloAlert.alert({
