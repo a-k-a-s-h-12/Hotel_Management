@@ -28,7 +28,7 @@ export default function CusRegister() {
 
         const data = (
           await axios.post(
-            "http://localhost:5000/customer/register",
+            "https://hotel-management-backend-qaoi.onrender.com/customer/register",
             newDetails
           )
         ).status;
