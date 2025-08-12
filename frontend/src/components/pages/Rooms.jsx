@@ -9,7 +9,7 @@ function Rooms() {
     async function getRooms() {
       try {
         const response = await axios.get(
-          "http://localhost:5000/room/getallrooms"
+          "https://hotel-management-backend-qaoi.onrender.com/room/getallrooms"
         );
         // Filter rooms to include only those where currentBookings is null
         const availableRooms = response.data.filter(
