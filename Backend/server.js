@@ -11,7 +11,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: [
+      "http://localhost:5173", // local development
+      "https://hotel-management-frontend-57nf.onrender.com" // deployed
+    ],
     credentials: true,
   })
 );
