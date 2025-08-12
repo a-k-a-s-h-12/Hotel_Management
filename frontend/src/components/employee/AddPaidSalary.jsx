@@ -64,7 +64,7 @@ export default function AddPaidSalary() {
           paiddate,
         };
         const data = (
-          await axios.post("http://localhost:5000/paidsalaries/", newDetails)
+          await axios.post("https://hotel-management-backend-qaoi.onrender.com/paidsalaries/", newDetails)
         ).status;
         if (data === 200) {
           SoloAlert.alert({
