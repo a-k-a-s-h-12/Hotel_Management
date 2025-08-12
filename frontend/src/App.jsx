@@ -15,7 +15,7 @@ import ViewAllRooms from "./components/room/ViewAllRooms";
 import AddRoom from "./components/room/AddRooms";
 import ViewOneRoom from "./components/room/ViewOneRoom";
 import ViewAllRoomBookings from "./components/room/ViewAllRoomBookings";
-import NavBar from "./Navbar";
+import NavBar from "./NavBar";
 import Rooms from "./components/pages/Rooms";
 import Services from "./components/pages/Services";
 import SpecificRoom from "./components/pages/SpecificRoom";
