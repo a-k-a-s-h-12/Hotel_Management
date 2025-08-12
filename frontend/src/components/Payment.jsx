@@ -97,7 +97,7 @@ const Payment = () => {
         contactno: formData.contactno,
       };
 
-      await axios.post("http://localhost:5000/booking", bookingData);
+      await axios.post("https://hotel-management-backend-qaoi.onrender.com/booking", bookingData);
 
       const roomUpdateData = {
         customer: {
@@ -113,7 +113,7 @@ const Payment = () => {
       };
 
       await axios.patch(
-        `http://localhost:5000/room/editroom/${roomid}`,
+        `https://hotel-management-backend-qaoi.onrender.com/room/editroom/${roomid}`,
         roomUpdateData
       );
 
@@ -129,7 +129,7 @@ const Payment = () => {
         isPaid: "Paid",
       };
 
-      await axios.post("http://localhost:5000/payment", paymentPostData);
+      await axios.post("https://hotel-management-backend-qaoi.onrender.com/payment", paymentPostData);
 
       generateReceiptPDF(paymentData, bookingData);
 
