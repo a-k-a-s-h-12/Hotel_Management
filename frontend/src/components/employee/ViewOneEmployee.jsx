@@ -24,7 +24,7 @@ export default function ViewOneEmployee() {
   useEffect(() => {
     async function getDetails() {
       try {
-        const result = await axios.get(`http://localhost:5000/employees/${id}`);
+        const result = await axios.get(`https://hotel-management-backend-qaoi.onrender.com/employees/${id}`);
         const data = result.data.data[0];
         setempid(data.empid);
         setfirstname(data.firstname);
@@ -56,7 +56,7 @@ export default function ViewOneEmployee() {
         branch,
       };
       const result = await axios.put(
-        `http://localhost:5000/employees/${id}`,
+        `https://hotel-management-backend-qaoi.onrender.com/employees/${id}`,
         newDetails
       );
       if (result.status === 200) {
@@ -107,7 +107,7 @@ export default function ViewOneEmployee() {
       onOk: async function () {
         try {
           const result = await axios.delete(
-            `http://localhost:5000/employees/${id}`
+            `https://hotel-management-backend-qaoi.onrender.com/employees/${id}`
           );
           if (result.status === 200) {
             SoloAlert.alert({
