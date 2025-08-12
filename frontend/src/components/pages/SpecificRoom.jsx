@@ -20,7 +20,7 @@ const SpecificRoom = () => {
     async function getDetails() {
       try {
         const response = await axios.get(
-          `http://localhost:5000/room/getroom/${id}`
+          `https://hotel-management-backend-qaoi.onrender.com/room/getroom/${id}`
         );
         const room = response.data.room;
 
