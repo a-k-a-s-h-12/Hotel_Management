@@ -10,7 +10,7 @@ export default function ViewAllPaidSalaries() {
   useEffect(() => {
     async function getDetails() {
       try {
-        const result = await axios.get("http://localhost:5000/paidsalaries");
+        const result = await axios.get("https://hotel-management-backend-qaoi.onrender.com/paidsalaries");
         setAllPaidSalaries(result.data.data);
         // console.log(result.data.data);
 
